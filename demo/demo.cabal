@@ -1,0 +1,21 @@
+name:                demo
+version:             0.1.0
+license:             BSD3
+license-file:        LICENSE
+author:              Sebastian Nagel
+maintainer:          sebastian.nagel@ncoding.at
+category:            Signature
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+cabal-version:       >=1.25
+
+executable demo
+  build-depends: base
+               , base2
+               , integer-impl-openssl
+               -- , integer-impl-gmp
+  mixins: integer-impl-openssl (GHC.Integer.OpenSSL as GHCInteger)
+  -- mixins: integer-impl-gmp (GHC.Integer.GMP as GHCInteger)
+  main-is: Main.hs
+  hs-source-dirs:      src
+  default-language:    Haskell2010

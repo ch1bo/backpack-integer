@@ -1,0 +1,21 @@
+name:                integer-impl-gmp
+version:             0.1.0
+-- synopsis:
+-- description:
+license:             BSD3
+license-file:        LICENSE
+author:              Sebastian Nagel
+maintainer:          sebastian.nagel@ncoding.at
+-- copyright:
+category:            Integer
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+cabal-version:       >=1.10
+
+library
+  build-depends:       integer-gmp
+                     , ghc-prim
+  exposed-modules:     GHC.Integer.GMP
+  re-exported-modules: GHC.Integer.GMP as GHCInteger
+  hs-source-dirs:      src
+  default-language:    Haskell2010

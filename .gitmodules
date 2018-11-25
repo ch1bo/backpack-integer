@@ -1,0 +1,3 @@
+[submodule "integer-openssl"]
+	path = integer-openssl
+	url = https://github.com/ch1bo/integer-openssl.git

@@ -1,0 +1,19 @@
+name:                base2
+version:             0.1.0
+synopsis:            Experimental implementation of a backpack aware 'base' using 'Integer' signature.
+-- description:
+license:             BSD3
+license-file:        LICENSE
+author:              Sebastian Nagel
+maintainer:          sebastian.nagel@ncoding.at
+category:            Signature
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+cabal-version:       >=1.25
+
+library
+  build-depends:       integer-sig
+                     , ghc-prim
+  hs-source-dirs:      src
+  exposed-modules:     Prelude2
+  default-language:    Haskell2010
