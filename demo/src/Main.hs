@@ -2,7 +2,7 @@
 module Main where
 
 import Prelude (IO, return, Int, print)
-import Prelude2 (Integer, (+), int2Integer, integer2Int)
+import P2 (Integer, (+), int2Integer, integer2Int)
 
 main :: IO ()
 main = print (integer2Int (work 2 3))

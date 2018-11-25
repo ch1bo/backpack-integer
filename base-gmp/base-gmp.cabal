@@ -1,4 +1,4 @@
-name:                demo
+name:                base-gmp
 version:             0.1.0
 license:             BSD3
 license-file:        LICENSE
@@ -9,10 +9,10 @@ build-type:          Simple
 extra-source-files:  CHANGELOG.md
 cabal-version:       >=1.25
 
-executable demo
-  build-depends: base
-               -- , base-gmp
-               , base-openssl
-  main-is: Main.hs
+library
+  build-depends: base-indef
+               , integer-impl-gmp
+  mixins: integer-impl-gmp (GHC.Integer.GMP as GHCInteger)
   hs-source-dirs:      src
+  exposed-modules:     P2
   default-language:    Haskell2010

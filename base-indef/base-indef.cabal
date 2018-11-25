@@ -1,4 +1,4 @@
-name:                base2
+name:                base-indef
 version:             0.1.0
 synopsis:            Experimental implementation of a backpack aware 'base' using 'Integer' signature.
 -- description:

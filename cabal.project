@@ -1,5 +1,7 @@
 packages:
-  base2
+  base-indef
+  base-gmp
+  base-openssl
   demo
   integer-sig
   integer-impl-gmp
